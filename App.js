@@ -12,7 +12,7 @@ export default function App() {
 
   function addTodoHandler() {
     console.log(enteredTodoText);
-    setTodos([...todos, enteredText]);
+    setTodos([...todos, enteredTodoText]);
     console.log(todos);
     setEnteredTodoText('');
   };
