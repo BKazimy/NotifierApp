@@ -91,6 +91,10 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingTop: 50,
     paddingHorizontal: 20,
+
+    // justifyContent: 'space-between',
+    // alignItems: 'center'
+
     // borderWidth:1,
     // borderColor: 'red',
   },
@@ -101,7 +105,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingBottom: 15,
 
-    flex: 1,
+    // flex: 1,
 
     // borderBottomWidth: 1,
     // borderBottomColor: 'gainsboro',
