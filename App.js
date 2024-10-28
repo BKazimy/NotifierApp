@@ -1,10 +1,19 @@
 
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text
+    // <View style={styles.container}>
+    <View style={}>
+      <View>
+        <TextInput placeholder='Your course name:' />
+        <Button title='Add Goal' />
+      </View>
+      <View>
+        <Text>List of Goals...</Text>
+      </View>
+
+      {/* <Text
         style={styles.dummyStyle}
       >
         Hello world!
@@ -12,7 +21,7 @@ export default function App() {
         <Button
           style={styles.dummyStyle}
           title="Im a button"
-        />
+        /> */}
     </View>
   );
 }
