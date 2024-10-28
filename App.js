@@ -168,10 +168,10 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     backgroundColor: '#57c',
     // color: 'white', // Style inheritence is not supported in react
-    
-    todoItems: {
-      color: 'white',
-    },
+  },
+  
+  todoItems: {
+    color: 'white',
   },
 
   // container: {
