@@ -5,12 +5,12 @@ export default function App() {
   return (
     // <View style={styles.container}>
     // <View style={styles.appContainer}>
-    <View style={{ padding: '9%', flexDirection: 'row'}}>
+    <View style={{ padding: '9%', flexDirection: 'row', width:'80%', height: 300}}>
     <View
       style={{
         backgroundColor: 'red',
-        width: '33.33334%',
-        height: 100,
+        // width: '33.33334%',
+        // height: 100,
         justifyContent: 'center',
         alignItems: 'center',
       }}
@@ -20,8 +20,8 @@ export default function App() {
       <View
         style={{
           backgroundColor: 'green',
-          width: '33.33334%',
-          height: 100,
+          // width: '33.33334%',
+          // height: 100,
           justifyContent: 'center',
           alignItems: 'center',
         }}
@@ -31,8 +31,8 @@ export default function App() {
       <View
         style={{
           backgroundColor: 'blue',
-          width: '33.33334%',
-          height: 100,
+          // width: '33.33334%',
+          // height: 100,
           justifyContent: 'center',
           alignItems: 'center',
         }}
