@@ -28,8 +28,10 @@ export default function App() {
 
 const styles = StyleSheet.create({
   appContainer: {
-    paddingVertical: 50,
-    paddingHorizontal:30,
+    marginVertical: 50,
+    marginHorizontal:30,
+    borderWidth: 1,
+    borderColor: 'red',
   },
   inputContainer: {
     flexDirection: 'row',
