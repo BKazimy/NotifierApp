@@ -107,7 +107,7 @@ export default function App() {
             key={todos.indexOf(todo)}
             style={styles.todoItemContainer}
           >
-            <Text>{todos.indexOf(todo)+1}= {todo}</Text>
+            <Text style={styles.todoItems}>{todos.indexOf(todo)+1}= {todo}</Text>
           </View>
         ))}
       </View>
@@ -167,7 +167,11 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 6,
     backgroundColor: '#57c',
-    color: 'white'
+    // color: 'white', // Style inheritence is not supported in react
+    
+    todoItems: {
+      color: 'white',
+    },
   },
 
   // container: {
