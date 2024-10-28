@@ -7,14 +7,13 @@ export default function App() {
 
   function todoInputHandler(enteredText) {
     console.log(enteredText);
-    setTodos([...todos, enteredText]);
     setEnteredTodoText(enteredText);
-    console.log(todos);
   };
 
   function addTodoHandler() {
     console.log(enteredTodoText);
-
+    setTodos([...todos, enteredText]);
+    console.log(todos);
     setEnteredTodoText('');
   };
 
