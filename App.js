@@ -102,7 +102,7 @@ export default function App() {
       </View>
 
       <View style={styles.toDoContainer}>
-        {todos.map((todo) => (
+        {todos.toReversed().map((todo) => (
           <View // round borders are not supported in <text> on ios so we wrap it in <View>
             key={todos.indexOf(todo)}
             style={styles.todoItemContainer}
