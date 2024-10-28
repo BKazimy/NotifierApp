@@ -92,10 +92,10 @@ const styles = StyleSheet.create({
     paddingTop: 50,
     paddingHorizontal: 20,
 
-    flex: 1,
     // flexDirection: 'column',
     // justifyContent: 'space-between',
     // alignItems: 'stretch',
+    flex: 1,
 
     // borderWidth:1,
     // borderColor: 'red',
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingBottom: 15,
+    // paddingBottom: 15,
 
     flex: 1,
 
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   },
 
   toDoContainer: {
-    flex: 3,
+    flex: 4,
 
     marginHorizontal: 10,
     paddingHorizontal: 10,
