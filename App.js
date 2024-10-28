@@ -6,16 +6,38 @@ export default function App() {
     // <View style={styles.container}>
     // <View style={styles.appContainer}>
     <View>
+    <View
+      style={{
+        backgroundColor: 'red',
+        width: 100,
+        height: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <Text>1</Text>
+    </View>
       <View
         style={{
-          backgroundColor: 'red',
+          backgroundColor: 'green',
           width: 100,
           height: 100,
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        <Text>1</Text>
+        <Text>2</Text>
+      </View>
+      <View
+        style={{
+          backgroundColor: 'blue',
+          width: 100,
+          height: 100,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Text>3</Text>
       </View>
       {/* <View style={styles.inputContainer}>
         <TextInput style={styles.TextInput} placeholder='Your course name:' />
