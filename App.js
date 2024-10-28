@@ -9,7 +9,7 @@ export default function App() {
     <View
       style={{
         backgroundColor: 'red',
-        width: '33%',
+        width: '33.33334%',
         height: 100,
         justifyContent: 'center',
         alignItems: 'center',
