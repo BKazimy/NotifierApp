@@ -76,7 +76,7 @@ export default function App() {
         <Button title='Submit'/>
       </View>
 
-      <View style={styles.toDoList}>
+      <View style={styles.toDoContainer}>
         <Text># Todo...</Text>
         <Text># Todo...</Text>
         <Text># Todo...</Text>
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     flex: 8,
   },
 
-  toDoList: {
+  toDoContainer: {
     marginHorizontal: 10,
     paddingHorizontal: 10,
     paddingTop: 10,
