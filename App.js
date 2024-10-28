@@ -103,7 +103,10 @@ export default function App() {
 
       <View style={styles.toDoContainer}>
         {todos.map((todo) => (
-          <Text key={todos.indexOf(todo)}>
+          <Text 
+            key={todos.indexOf(todo)}
+            style={styles.todoItem}
+          >
             {todos.indexOf(todo)+1}= {todo}
           </Text>
         ))}
@@ -157,7 +160,15 @@ const styles = StyleSheet.create({
 
     borderTopWidth: 1,
     borderTopColor: 'gainsboro',
-  }
+  },
+
+  todoItem: {
+    margin: 8,
+    padding: 8,
+    borderRadius: 6,
+    backgroundColor: '#57c',
+    color: 'white'
+  },
 
   // container: {
   //   flex: 1,
