@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default function App() {
   return (
@@ -9,6 +9,10 @@ export default function App() {
       >
         Hello world!
         </Text>
+        <Button
+          style={styles.dummyStyle}
+          title="Im a button"
+        />
     </View>
   );
 }
@@ -20,7 +24,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  
+
   dummyStyle: {
     margin: 16,
     padding: 16,
