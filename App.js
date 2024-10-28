@@ -28,7 +28,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   appContainer: {
-    padding: 50
+    paddingVertical: 50,
+    paddingHorizontal:30,
   },
   inputContainer: {
     flexDirection: 'row',
@@ -38,6 +39,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     width: '80%',
+    marginRight: 5,
   }
 
   // container: {
