@@ -5,11 +5,11 @@ export default function App() {
   return (
     // <View style={styles.container}>
     // <View style={styles.appContainer}>
-    <View style={{ padding: 'auto', flexDirection: 'row-reverse'}}>
+    <View style={{ padding: '9%', flexDirection: 'row'}}>
     <View
       style={{
         backgroundColor: 'red',
-        width: 100,
+        width: '33%',
         height: 100,
         justifyContent: 'center',
         alignItems: 'center',
