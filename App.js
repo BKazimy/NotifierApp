@@ -3,13 +3,18 @@ import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('');
+  const [todos, setTodos] = useState([]);
+
   function todoInputHandler(enteredText) {
     console.log(enteredText);
+    setTodos([...todos, enteredText]);
     setEnteredTodoText(enteredText);
+    console.log(todos);
   };
 
   function addTodoHandler() {
     console.log(enteredTodoText);
+
     setEnteredTodoText('');
   };
 
