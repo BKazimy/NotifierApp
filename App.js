@@ -84,14 +84,17 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingTop: 50,
     paddingHorizontal: 20,
-    borderWidth:1,
-    borderColor: 'red',
+    // borderWidth:1,
+    // borderColor: 'red',
   },
 
   inputContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    paddingBottom: 25,
+    borderBottomWidth: 1,
+    borderBottomColor: 'gray',
   },
 
   textInput: {
@@ -99,7 +102,7 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     width: '80%',
     marginRight: 5,
-    // flex: ,
+    flex: 8,
   }
 
   // container: {
