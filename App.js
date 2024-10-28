@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingBottom: 25,
     borderBottomWidth: 1,
-    borderBottomColor: 'gray',
+    borderBottomColor: 'darkgray',
   },
 
   textInput: {
