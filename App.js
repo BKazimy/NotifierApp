@@ -10,6 +10,7 @@ export default function App() {
 
   function addTodoHandler() {
     console.log(enteredTodoText);
+    setEnteredTodoText('');
   };
 
   return (
@@ -86,6 +87,7 @@ export default function App() {
         style={styles.textInput} 
         placeholder='Your Text?'
         onChangeText={todoInputHandler}
+        value={enteredTodoText}
         />
         <Button 
         title='Submit'
