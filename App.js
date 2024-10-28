@@ -29,7 +29,9 @@ export default function App() {
 const styles = StyleSheet.create({
   appContainer: {
     marginVertical: 50,
-    marginHorizontal:30,
+    // marginHorizontal:30,
+    justifyContent: 'center',
+    width: '95%',
     borderWidth: 1,
     borderColor: 'red',
   },
