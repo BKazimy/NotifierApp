@@ -99,9 +99,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingBottom: 35,
-    borderBottomWidth: 1,
-    borderBottomColor: 'gainsboro',
+    paddingBottom: 25,
+
+    // borderBottomWidth: 1,
+    // borderBottomColor: 'gainsboro',
   },
 
   textInput: {
