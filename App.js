@@ -2,6 +2,10 @@
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 export default function App() {
+  function todoInputHandler() {};
+
+  function addTodoHandler() {};
+
   return (
     // <View style={styles.container}>
     // <View style={styles.appContainer}>
@@ -72,7 +76,11 @@ export default function App() {
     // </View>
     <View style={styles.appContainer}>
       <View style={styles.inputContainer}>
-        <TextInput style={styles.textInput} placeholder='Your Text?'/>
+        <TextInput 
+        style={styles.textInput} 
+        placeholder='Your Text?'
+        onChangeText={todoInputHandler}
+        />
         <Button title='Submit'/>
       </View>
 
