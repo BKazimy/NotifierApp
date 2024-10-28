@@ -75,6 +75,13 @@ export default function App() {
         <TextInput style={styles.textInput} placeholder='Your Text?'/>
         <Button title='Submit'/>
       </View>
+
+      <View style={styles.toDoList}>
+        <Text># Todo...</Text>
+        <Text># Todo...</Text>
+        <Text># Todo...</Text>
+        <Text># Todo...</Text>
+      </View>
     </View>
   );
 }
@@ -92,7 +99,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingBottom: 25,
+    paddingBottom: 35,
     borderBottomWidth: 1,
     borderBottomColor: 'gainsboro',
   },
@@ -103,6 +110,15 @@ const styles = StyleSheet.create({
     width: '80%',
     marginRight: 5,
     flex: 8,
+  },
+
+  toDoList: {
+    marginHorizontal: 20,
+    paddingHorizontal: 10,
+    marginTop: '5%',
+
+    borderTopWidth: 1,
+    borderTopColor: 'gainsboro',
   }
 
   // container: {
