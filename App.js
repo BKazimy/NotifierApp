@@ -102,7 +102,11 @@ export default function App() {
       </View>
 
       <View style={styles.toDoContainer}>
-        {todos.map((todo) => <Text key={todos.indexOf(todo)}># {todo}</Text>)}
+        {todos.map((todo) => (
+          <Text key={todos.indexOf(todo)}>
+            {todos.indexOf(todo)+1}- {todo}
+          </Text>
+        ))}
       </View>
     </View>
   );
