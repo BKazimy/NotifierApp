@@ -5,10 +5,11 @@ export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('');
   function todoInputHandler(enteredText) {
     console.log(enteredText);
+    setEnteredTodoText(enteredText);
   };
 
   function addTodoHandler() {
-
+    console.log(enteredTodoText);
   };
 
   return (
