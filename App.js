@@ -107,7 +107,11 @@ export default function App() {
             key={todos.indexOf(todo)}
             style={styles.todoItemContainer}
           >
-            <Text style={styles.todoItems}>{todos.indexOf(todo)+1}= {todo}</Text>
+            <Text 
+              style={styles.todoItems}
+            >
+              {todos.indexOf(todo)+1}- {todo}
+            </Text>
           </View>
         ))}
       </View>
