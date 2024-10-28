@@ -5,7 +5,7 @@ export default function App() {
   return (
     // <View style={styles.container}>
     // <View style={styles.appContainer}>
-    <View style={{ padding: '10%', flexDirection: 'row-reverse'}}>
+    <View style={{ padding: 'auto', flexDirection: 'row-reverse'}}>
     <View
       style={{
         backgroundColor: 'red',
