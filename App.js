@@ -11,10 +11,12 @@ export default function App() {
   };
 
   function addTodoHandler() {
-    console.log(enteredTodoText);
-    setTodos([...todos, enteredTodoText]);
-    console.log(todos);
-    setEnteredTodoText('');
+    if (enteredTodoText) {
+      console.log(enteredTodoText);
+      setTodos([...todos, enteredTodoText]);
+      console.log(todos);
+      setEnteredTodoText('');
+    };
   };
 
   return (
