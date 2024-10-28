@@ -99,7 +99,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingBottom: 25,
+    paddingBottom: 15,
+
+    flex: 1,
 
     // borderBottomWidth: 1,
     // borderBottomColor: 'gainsboro',
@@ -114,8 +116,10 @@ const styles = StyleSheet.create({
   },
 
   toDoList: {
-    marginHorizontal: 20,
+    marginHorizontal: 10,
     paddingHorizontal: 10,
+    paddingTop: 10,
+
     marginTop: '5%',
 
     borderTopWidth: 1,
