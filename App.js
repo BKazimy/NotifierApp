@@ -103,12 +103,12 @@ export default function App() {
 
       <View style={styles.toDoContainer}>
         {todos.map((todo) => (
-          <Text 
+          <View // round borders are not supported in <text> on ios so we wrap it in <View>
             key={todos.indexOf(todo)}
             style={styles.todoItem}
           >
-            {todos.indexOf(todo)+1}= {todo}
-          </Text>
+            <Text>{todos.indexOf(todo)+1}= {todo}</Text>
+          </View>
         ))}
       </View>
     </View>
