@@ -11,7 +11,7 @@ export default function App() {
       width:'80%', 
       height: 300, 
       justifyContent: 'space-around', 
-      alignItems: 'stretch', 
+      alignItems: 'center', 
       borderWidth:1, 
       borderColor: 'red',
       }}>
@@ -19,6 +19,7 @@ export default function App() {
     <View
       style={{
         backgroundColor: 'red',
+        flex: 1,
         // width: '33.33334%',
         // height: 100,
         justifyContent: 'center',
@@ -30,6 +31,7 @@ export default function App() {
       <View
         style={{
           backgroundColor: 'green',
+          flex: 1,
           // width: '33.33334%',
           // height: 100,
           justifyContent: 'center',
@@ -41,6 +43,7 @@ export default function App() {
       <View
         style={{
           backgroundColor: 'blue',
+          flex: 1,
           // width: '33.33334%',
           // height: 100,
           justifyContent: 'center',
