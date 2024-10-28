@@ -1,12 +1,15 @@
-
+import { useState } from 'react';
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 export default function App() {
+  const [enteredTodoText, setEnteredTodoText] = useState('');
   function todoInputHandler(enteredText) {
     console.log(enteredText);
   };
 
-  function addTodoHandler() {};
+  function addTodoHandler() {
+
+  };
 
   return (
     // <View style={styles.container}>
@@ -83,7 +86,10 @@ export default function App() {
         placeholder='Your Text?'
         onChangeText={todoInputHandler}
         />
-        <Button title='Submit'/>
+        <Button 
+        title='Submit'
+        onPress={addTodoHandler}
+        />
       </View>
 
       <View style={styles.toDoContainer}>
