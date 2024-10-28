@@ -82,7 +82,8 @@ export default function App() {
 const styles = StyleSheet.create({
   appContainer: {
     width: "100%",
-    padding: 50,
+    paddingTop: 50,
+    paddingHorizontal: 20,
     borderWidth:1,
     borderColor: 'red',
   },
