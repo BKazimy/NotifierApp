@@ -105,7 +105,7 @@ export default function App() {
         {todos.map((todo) => (
           <View // round borders are not supported in <text> on ios so we wrap it in <View>
             key={todos.indexOf(todo)}
-            style={styles.todoItem}
+            style={styles.todoItemContainer}
           >
             <Text>{todos.indexOf(todo)+1}= {todo}</Text>
           </View>
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     borderTopColor: 'gainsboro',
   },
 
-  todoItem: {
+  todoItemContainer: {
     margin: 8,
     padding: 8,
     borderRadius: 6,
