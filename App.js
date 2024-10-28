@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     width: '80%',
     marginRight: 5,
+    // flex: ,
   }
 
   // container: {
