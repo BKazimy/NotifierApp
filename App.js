@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   },
 
   inputContainer: {
-    flex: 1,
+    // flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -121,10 +121,11 @@ const styles = StyleSheet.create({
   },
 
   toDoContainer: {
+    flex: 3,
+
     marginHorizontal: 10,
     paddingHorizontal: 10,
     paddingTop: 10,
-
     marginTop: '5%',
 
     borderTopWidth: 1,
