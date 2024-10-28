@@ -28,6 +28,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   appContainer: {
+    width: "100%",
     padding: 50,
   },
   inputContainer: {
