@@ -2,7 +2,9 @@
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 export default function App() {
-  function todoInputHandler() {};
+  function todoInputHandler(enteredText) {
+    console.log(enteredText);
+  };
 
   function addTodoHandler() {};
 
