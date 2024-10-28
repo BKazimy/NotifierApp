@@ -20,7 +20,7 @@ export default function App() {
       <View
         style={{
           backgroundColor: 'green',
-          width: 100,
+          width: '33.33334%',
           height: 100,
           justifyContent: 'center',
           alignItems: 'center',
@@ -31,7 +31,7 @@ export default function App() {
       <View
         style={{
           backgroundColor: 'blue',
-          width: 100,
+          width: '33.33334%',
           height: 100,
           justifyContent: 'center',
           alignItems: 'center',
