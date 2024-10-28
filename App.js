@@ -5,7 +5,7 @@ export default function App() {
   return (
     // <View style={styles.container}>
     <View style={styles.appContainer}>
-      <View>
+      <View style={styles.inputContainer}>
         <TextInput placeholder='Your course name:' />
         <Button title='Add Goal' />
       </View>
@@ -30,18 +30,21 @@ const styles = StyleSheet.create({
   appContainer: {
     padding: 50
   },
+  inputContainer: {
+    flexDirection: 'row'
+  }
 
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  // container: {
+  //   flex: 1,
+  //   backgroundColor: '#fff',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // },
 
-  dummyStyle: {
-    margin: 16,
-    padding: 16,
-    borderWidth: 2,
-    borderColor: 'blue',
-  },
+  // dummyStyle: {
+  //   margin: 16,
+  //   padding: 16,
+  //   borderWidth: 2,
+  //   borderColor: 'blue',
+  // },
 });
