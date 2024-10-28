@@ -86,10 +86,13 @@ const styles = StyleSheet.create({
     borderWidth:1,
     borderColor: 'red',
   },
+
   inputContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
+
   textInput: {
     borderWidth: 1,
     borderColor: '#ccc',
