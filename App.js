@@ -124,6 +124,7 @@ export default function App() {
             return <TodoItem 
               text={itemData.item.text}
               id={itemData.item.id}
+              onDelete={deleteTodoHandeler}
             />;
           }}
           keyExtractor={(item, index) => {
