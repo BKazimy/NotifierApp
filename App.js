@@ -97,7 +97,7 @@ export default function App() {
     <View style={styles.appContainer}>
       <View style={styles.inputContainer}>
         <TodoInput 
-          onAdd={addTodoHandler}
+          onAddTodo={addTodoHandler}
         />
       </View>
 

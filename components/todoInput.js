@@ -17,7 +17,7 @@ function TodoInput(props) {
             />
             <Button 
                 title='Submit'
-                onPress={props.onAdd}
+                onAddTodo={props.onAdd}
             />
         </View>
     )
