@@ -21,7 +21,7 @@ export default function App() {
     if (enteredTodoText) {
       setTodos((todos) => [
         ...todos, 
-        {text: enteredTodoText, key: Math.random().toString()},
+        {text: enteredTodoText, id: Math.random().toString()},
       ]);
       console.log(todos);
       // setEnteredTodoText('');
@@ -131,9 +131,12 @@ export default function App() {
           renderItem={(itemData) => {
             return (
               <View style={styles.todoItemContainer}>
-                <Text style={styles.todoItems}>{itemData.item.text}</Text>
+                <Text style={styles.todoItems}>{itemData.item.id}_{itemData.item.text}</Text>
               </View>
             )
+          }}
+          keyExtractor={(item, index) => {
+            return item.id;
           }}
         />
       </View>
