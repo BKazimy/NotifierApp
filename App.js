@@ -14,6 +14,11 @@ import TodoInput from './components/todoInput';
 
 export default function App() {
   const [todos, setTodos] = useState([]);
+  const [modalVisibility, setModalVisibility] = useState(false);
+
+  function modalHandler() {
+    setModalVisibility(true);
+  }
 
   function addTodoHandler(enteredTodoText) {
     if (enteredTodoText) {
