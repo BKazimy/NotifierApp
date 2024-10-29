@@ -19,14 +19,14 @@ function TodoInput(props) {
             animationType='slide'
         >
             <View style={styles.inputContainer}>
-                <View style={styles.textInput}>
+                {/* <View > */}
                     <TextInput 
-                        
+                        style={styles.textInput}
                         placeholder='Your Text?'
                         onChangeText={todoInputHandler}
                         value={enteredTodoText.toString()}
                     />
-                </View>
+                {/* </View> */}
 
                 <View style={styles.buttonContainer}>
                     <Button 
