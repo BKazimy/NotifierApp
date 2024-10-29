@@ -131,7 +131,7 @@ export default function App() {
         <FlatList
           data={todos}
           renderItem={(itemData) => {
-            return <TodoItem />;
+            return <TodoItem item={itemData.item} />;
           }}
           keyExtractor={(item, index) => {
             return item.id;
