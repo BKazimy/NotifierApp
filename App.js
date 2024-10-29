@@ -25,6 +25,10 @@ export default function App() {
     };
   };
 
+  function deleteTodoHandeler() {
+    console.log("Deleteing a TODO!")
+  }
+
   return (
     // <View style={styles.container}>
     // <View style={styles.appContainer}>
