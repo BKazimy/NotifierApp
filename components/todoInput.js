@@ -71,6 +71,11 @@ const styles = StyleSheet.create({
   
   buttonContainer: {
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    
+    borderWidth: 1,
+    borderColor: 'red',
   },
 
 })
