@@ -70,13 +70,15 @@ const styles = StyleSheet.create({
   },
 
   textInput: {
-    borderWidth: 1,
-    borderColor: '#ccc',
     width: '100%',
     height: 40,
     marginRight: 5,
     marginBottom: '10%',
     color: 'beige',
+
+    borderWidth: 1,
+    borderColor: 'beige',
+    borderRadius: 5,
     // flex: 1, // takes as much space as possible for 1 share
 
     // justifyContent: 'center',
