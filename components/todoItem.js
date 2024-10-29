@@ -6,7 +6,8 @@ function TodoItem(props) {
         <View style={styles.todoItem}>
             <Pressable 
                 onPress={props.onDelete.bind(this, props.id)}
-                android_ripple={{color: '#f00'}}
+                // android_ripple={{color: '#f00'}} // only for android
+                style={({pressed})=> pressed && styles.pressedItem} // os independant
             >
                 <Text style={styles.todoText}>
                     {props.id}_{props.text}
@@ -31,4 +32,9 @@ const styles = StyleSheet.create({
     color: 'white',
     padding: 8,
   },
+
+  pressedItem: {
+    color: '#f00',
+    opacity: 1,
+  }
 })
