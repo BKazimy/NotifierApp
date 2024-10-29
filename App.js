@@ -13,16 +13,14 @@ export default function App() {
   const [todos, setTodos] = useState([1,2,3,4,5,6,7,8,9]);
 
   function todoInputHandler(enteredText) {
-    console.log(enteredText);
     setEnteredTodoText(enteredText);
   };
 
   function addTodoHandler() {
     if (enteredTodoText) {
-      console.log(enteredTodoText);
       setTodos([...todos, enteredTodoText]);
-      console.log(todos);
-      setEnteredTodoText('');
+      // console.log(todos);
+      // setEnteredTodoText('');
     };
   };
 
