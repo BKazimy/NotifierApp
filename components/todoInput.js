@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     
   inputContainer: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
     paddingHorizontal: '15%',
 
