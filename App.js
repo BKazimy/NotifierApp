@@ -120,7 +120,7 @@ export default function App() {
               <Text 
                 style={styles.todoItems}
               >
-                {todo.key}: {todo.text}
+                {todo.text}
               </Text>
             </View>
           ))}
