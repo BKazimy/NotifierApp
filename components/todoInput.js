@@ -26,9 +26,6 @@ function TodoInput(props) {
                     title='Submit'
                     onPress={addTodoHandler}
                 />
-                <Button title="Go to ToDo list"
-                    onPress={props.handler}
-                />
             </View>
         // </Modal>
     )
