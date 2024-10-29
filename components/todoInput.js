@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     
   inputContainer: {
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
 
@@ -61,8 +61,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     width: '80%',
+    height: 15,
     marginRight: 5,
     flex: 1,
+
+    // borderWidth: 1,
+    // borderColor: 'red',
   },
   
   buttonContainer: {
