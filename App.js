@@ -111,7 +111,7 @@ export default function App() {
       </View>
 
       <View style={styles.toDoContainer}>
-        <ScrollView>
+        {/* <ScrollView>
           {todos.toReversed().map((todo) => (
             <View // round borders are not supported in <text> on ios so we wrap it in <View>
               key={todo.key}
@@ -124,7 +124,18 @@ export default function App() {
               </Text>
             </View>
           ))}
-        </ScrollView>
+        </ScrollView> */}
+
+        <FlatList
+          data={todos}
+          renderItem={(itemData) => {
+            return (
+              <View style={styles.todoItemContainer}>
+                <Text style={styles.todoItems}>{itemData.item}</Text>
+              </View>
+            )
+          }}
+        />
       </View>
     </View>
   );
