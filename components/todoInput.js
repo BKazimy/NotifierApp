@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyleSheet, Button, TextInput, View } from "react-native";
+import { StyleSheet, Button, TextInput, View, Modal } from "react-native";
 
 function TodoInput(props) {
     const [enteredTodoText, setEnteredTodoText] = useState(1);
@@ -14,18 +14,20 @@ function TodoInput(props) {
     }
 
     return (
-        <View style={styles.inputContainer}>
-            <TextInput 
-                style={styles.textInput} 
-                placeholder='Your Text?'
-                onChangeText={todoInputHandler}
-                value={enteredTodoText.toString()}
-            />
-            <Button 
-                title='Submit'
-                onPress={addTodoHandler}
-            />
-        </View>
+        <Modal>
+            <View style={styles.inputContainer}>
+                <TextInput 
+                    style={styles.textInput} 
+                    placeholder='Your Text?'
+                    onChangeText={todoInputHandler}
+                    value={enteredTodoText.toString()}
+                />
+                <Button 
+                    title='Submit'
+                    onPress={addTodoHandler}
+                />
+            </View>
+        </Modal>
     )
 }
 
