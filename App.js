@@ -10,7 +10,7 @@ import {
 
 export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('');
-  const [todos, setTodos] = useState([1,2,3,4,5,6,7,8,9,3,4,34,345,2342,3234,234,234]);
+  const [todos, setTodos] = useState([]);
 
   function todoInputHandler(enteredText) {
     setEnteredTodoText(enteredText);
@@ -18,7 +18,10 @@ export default function App() {
 
   function addTodoHandler() {
     if (enteredTodoText) {
-      setTodos([...todos, enteredTodoText]);
+      setTodos((todos) => [
+        ...todos, 
+        {text: enteredTodoText, key: Math.random().toString()},
+      ]);
       // console.log(todos);
       // setEnteredTodoText('');
     };
