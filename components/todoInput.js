@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     height: 40,
     marginRight: 5,
     marginBottom: '10%',
-    color: 'white',
+    color: 'beige',
     // flex: 1, // takes as much space as possible for 1 share
 
     // justifyContent: 'center',
