@@ -7,6 +7,11 @@ function TodoInput(props) {
     function todoInputHandler(enteredText) {
       setEnteredTodoText(enteredText);
     };
+
+    function addTodoHandler() {
+        props.onAddTodo(enteredTodoText);
+    }
+
     return (
         <View>
             <TextInput 
@@ -17,7 +22,7 @@ function TodoInput(props) {
             />
             <Button 
                 title='Submit'
-                onAddTodo={props.onAdd}
+                onPress={addTodoHandler}
             />
         </View>
     )
