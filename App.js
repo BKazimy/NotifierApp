@@ -3,7 +3,7 @@ import {
   StyleSheet, 
   // Text, 
   View, 
-  // Button, 
+  Button,
   // TextInput, 
   // ScrollView, // loads the whole page, good for limited content like articles or so
   FlatList, // handles the iteration, lazy-loads the page and use scrolls, good for dynamic lists
@@ -101,6 +101,7 @@ export default function App() {
     //     /> */}
     // </View>
     <View style={styles.appContainer}>
+      <Button title="Add new ToDo" color='#57c' />
       <TodoInput 
         onAddTodo={addTodoHandler}
       />
