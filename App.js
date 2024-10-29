@@ -25,8 +25,8 @@ export default function App() {
     };
   };
 
-  function deleteTodoHandeler() {
-    console.log("Deleteing a TODO!")
+  function deleteTodoHandeler(todoId) {
+    console.log("Deleteing id:", todoId);
   }
 
   return (
