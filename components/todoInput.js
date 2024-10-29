@@ -14,7 +14,7 @@ function TodoInput(props) {
     }
 
     return (
-        <View>
+        <View style={styles.toDoContainer}>
             <TextInput 
                 style={styles.textInput} 
                 placeholder='Your Text?'
@@ -32,6 +32,18 @@ function TodoInput(props) {
 export default TodoInput;
 
 const styles = StyleSheet.create({
+
+  toDoContainer: {
+    flex: 5,
+
+    marginHorizontal: 10,
+    paddingHorizontal: 10,
+    paddingTop: 10,
+    marginTop: '5%',
+
+    borderTopWidth: 1,
+    borderTopColor: 'gainsboro',
+  },
     
   inputContainer: {
     flexDirection: 'row',
