@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: '15%',
-    backgroundColor: 'magenta',
+    backgroundColor: 'teal',
 
     // borderBottomWidth: 1,
     // borderBottomColor: 'gainsboro',
@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
     height: 40,
     marginRight: 5,
     marginBottom: '10%',
+    color: 'white',
     // flex: 1, // takes as much space as possible for 1 share
 
     // justifyContent: 'center',

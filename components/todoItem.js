@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   todoItem: {
     margin: 8,
     borderRadius: 6,
-    backgroundColor: '#57c',
+    backgroundColor: 'teal',
     // color: 'white', // Style inheritence is not supported in react
   },
   
