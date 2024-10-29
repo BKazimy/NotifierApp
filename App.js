@@ -106,10 +106,16 @@ export default function App() {
     //     /> */}
     // </View>
     <View style={styles.appContainer}>
-      <Button title="Add new ToDo" color='#57c' />
-      <TodoInput 
-        onAddTodo={addTodoHandler}
+      <Button 
+        title="Add new ToDo" 
+        color='#57c' 
+        onPress={modalHandler}
       />
+      {modalVisibility && 
+        <TodoInput 
+          onAddTodo={addTodoHandler}
+        />
+      }
 
       <View style={styles.toDoContainer}>
         {/* <ScrollView>
