@@ -112,7 +112,7 @@ export default function App() {
     <View style={styles.appContainer}>
       <Button 
         title="Add new ToDo" 
-        color='#6c7' 
+        color='#374' 
         onPress={openModal}
       />
       
