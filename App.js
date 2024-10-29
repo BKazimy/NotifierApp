@@ -13,6 +13,23 @@ import TodoItem from './components/todoItem';
 import TodoInput from './components/todoInput';
 
 export default function App() {
+  const [enteredTodoText, setEnteredTodoText] = useState('abc');
+  const [todos, setTodos] = useState([]);
+
+  function todoInputHandler(enteredText) {
+    setEnteredTodoText(enteredText);
+  };
+
+  function addTodoHandler() {
+    if (enteredTodoText) {
+      setTodos((todos) => [
+        ...todos, 
+        {text: enteredTodoText, id: Math.random().toString()},
+      ]);
+      console.log(todos);
+      // setEnteredTodoText('');
+    };
+  };
 
   return (
     // <View style={styles.container}>
