@@ -132,9 +132,7 @@ export default function App() {
             return (
               <View style={styles.todoItemContainer}>
                 <Text style={styles.todoItems}>{
-                    (item, index) => {
-                      return item.id;
-                    }
+                    (item, index) => item.id
                   }_{itemData.item.text}
                 </Text>
               </View>
