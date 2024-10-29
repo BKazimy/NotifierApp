@@ -10,7 +10,7 @@ import {
 
 export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('');
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([1,2,3,4,5,6,7,8,9]);
 
   function todoInputHandler(enteredText) {
     console.log(enteredText);
