@@ -115,12 +115,12 @@ export default function App() {
         color='#57c' 
         onPress={openModal}
       />
-      {modalVisibility && 
-        <TodoInput 
-          onAddTodo={addTodoHandler}
-          handler={closeModal}
-        />
-      }
+      
+      <TodoInput 
+        onAddTodo={addTodoHandler}
+        handler={closeModal}
+        visible={modalVisibility}
+      />
 
       <View style={styles.toDoContainer}>
         {/* <ScrollView>
