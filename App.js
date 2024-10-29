@@ -14,7 +14,7 @@ import TodoInput from './components/todoInput';
 
 export default function App() {
   const [todos, setTodos] = useState([]);
-  const [modalVisibility, setModalVisibility] = useState(false);
+  const [modalVisibility, setModalVisibility] = useState(true);
 
   function openModal() {
     setModalVisibility(true);

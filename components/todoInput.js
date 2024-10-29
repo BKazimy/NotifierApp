@@ -49,7 +49,7 @@ export default TodoInput;
 const styles = StyleSheet.create({
     
   inputContainer: {
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
 
@@ -59,12 +59,6 @@ const styles = StyleSheet.create({
     // borderBottomColor: 'gainsboro',
   },
 
-  buttons: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-
   textInput: {
     borderWidth: 1,
     borderColor: '#ccc',
@@ -72,4 +66,11 @@ const styles = StyleSheet.create({
     marginRight: 5,
     flex: 1,
   },
+  
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+
 })
