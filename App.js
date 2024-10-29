@@ -5,7 +5,8 @@ import {
   View, 
   Button, 
   TextInput, 
-  ScrollView 
+  ScrollView, // loads the whole page, good for limited content like articles or so
+  FlatList, // lazy-loads the page as use scrolls, good for dynamic lists
 } from 'react-native';
 
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
         ...todos, 
         {text: enteredTodoText, key: Math.random().toString()},
       ]);
-      // console.log(todos);
+      console.log(todos);
       // setEnteredTodoText('');
     };
   };
@@ -110,7 +111,7 @@ export default function App() {
       </View>
 
       <View style={styles.toDoContainer}>
-        <ScrollView>
+        <FlatList alwaysBounceVertical={false}>
           {todos.toReversed().map((todo) => (
             <View // round borders are not supported in <text> on ios so we wrap it in <View>
               key={todo.key}
@@ -119,11 +120,11 @@ export default function App() {
               <Text 
                 style={styles.todoItems}
               >
-                {todo.key}: {todo}
+                {todo.key}: {todo.text}
               </Text>
             </View>
           ))}
-        </ScrollView>
+        </FlatList>
       </View>
     </View>
   );
