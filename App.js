@@ -146,6 +146,18 @@ const styles = StyleSheet.create({
     // borderWidth:1,
     // borderColor: 'red',
   },
+  
+  toDoContainer: {
+    flex: 5,
+
+    marginHorizontal: 10,
+    paddingHorizontal: 10,
+    paddingTop: 10,
+    marginTop: '5%',
+
+    borderTopWidth: 1,
+    borderTopColor: 'gainsboro',
+  },
 
   // container: {
   //   flex: 1,
