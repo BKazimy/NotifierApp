@@ -27,7 +27,6 @@ function TodoInput(props) {
                 />
 
                 <View style={styles.buttonContainer}>
-
                     <Button 
                         title='Submit'
                         onPress={addTodoHandler}
@@ -75,6 +74,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
 
     width: '100%',
+    flex: 1,
     
     borderWidth: 1,
     borderColor: 'red',
