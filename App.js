@@ -12,7 +12,7 @@ import {
 import { TodoItem } from './components/todoItem';
 
 export default function App() {
-  const [enteredTodoText, setEnteredTodoText] = useState('');
+  const [enteredTodoText, setEnteredTodoText] = useState('abc');
   const [todos, setTodos] = useState([]);
 
   function todoInputHandler(enteredText) {

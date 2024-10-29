@@ -4,7 +4,7 @@ function TodoItem(props) {
     return (
         <View style={styles.todoItem}>
           <Text style={styles.todoText}>
-            {props.item.id}_{props.item.text}
+            {props.item.id}_{props.text}
           </Text>
         </View>
     );
