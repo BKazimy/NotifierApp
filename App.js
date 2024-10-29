@@ -117,7 +117,7 @@ export default function App() {
         </ScrollView> */}
 
         <FlatList
-          data={todos}
+          data={todos.toReversed()}
           renderItem={(itemData) => {
             return <TodoItem 
               text={itemData.item.text}
