@@ -111,7 +111,7 @@ export default function App() {
       </View>
 
       <View style={styles.toDoContainer}>
-        <FlatList alwaysBounceVertical={false}>
+        <FlatList>
           {todos.toReversed().map((todo) => (
             <View // round borders are not supported in <text> on ios so we wrap it in <View>
               key={todo.key}
@@ -120,7 +120,7 @@ export default function App() {
               <Text 
                 style={styles.todoItems}
               >
-                {todo.text}
+                #_{todo.text}
               </Text>
             </View>
           ))}
