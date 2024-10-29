@@ -9,7 +9,7 @@ import {
   FlatList, // handles the iteration, lazy-loads the page and use scrolls, good for dynamic lists
 } from 'react-native';
 
-import TodoItem from './components/todoItem';
+import {TodoItem} from './components/todoItem';
 
 export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('abc');
