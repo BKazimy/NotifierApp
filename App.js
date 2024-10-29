@@ -3,8 +3,8 @@ import {
   StyleSheet, 
   // Text, 
   View, 
-  Button, 
-  TextInput, 
+  // Button, 
+  // TextInput, 
   // ScrollView, // loads the whole page, good for limited content like articles or so
   FlatList, // handles the iteration, lazy-loads the page and use scrolls, good for dynamic lists
 } from 'react-native';
@@ -94,11 +94,9 @@ export default function App() {
     //     /> */}
     // </View>
     <View style={styles.appContainer}>
-      <View style={styles.inputContainer}>
-        <TodoInput 
-          onAddTodo={addTodoHandler}
-        />
-      </View>
+      <TodoInput 
+        onAddTodo={addTodoHandler}
+      />
 
       <View style={styles.toDoContainer}>
         {/* <ScrollView>
@@ -147,18 +145,6 @@ const styles = StyleSheet.create({
 
     // borderWidth:1,
     // borderColor: 'red',
-  },
-
-  toDoContainer: {
-    flex: 5,
-
-    marginHorizontal: 10,
-    paddingHorizontal: 10,
-    paddingTop: 10,
-    marginTop: '5%',
-
-    borderTopWidth: 1,
-    borderTopColor: 'gainsboro',
   },
 
   // container: {
