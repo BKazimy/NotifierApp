@@ -16,8 +16,12 @@ export default function App() {
   const [todos, setTodos] = useState([]);
   const [modalVisibility, setModalVisibility] = useState(false);
 
-  function modalHandler() {
+  function openModal() {
     setModalVisibility(true);
+  }
+
+  function closeModal() {
+    setModalVisibility(false);
   }
 
   function addTodoHandler(enteredTodoText) {
@@ -109,12 +113,12 @@ export default function App() {
       <Button 
         title="Add new ToDo" 
         color='#57c' 
-        onPress={modalHandler}
+        onPress={openModal}
       />
       {modalVisibility && 
         <TodoInput 
           onAddTodo={addTodoHandler}
-          
+          handler={closeModal}
         />
       }
 
