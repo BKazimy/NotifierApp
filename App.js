@@ -1,5 +1,12 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import { 
+  StyleSheet, 
+  Text, 
+  View, 
+  Button, 
+  TextInput, 
+  ScrollView 
+} from 'react-native';
 
 export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('');
@@ -101,7 +108,7 @@ export default function App() {
         />
       </View>
 
-      <View style={styles.toDoContainer}>
+      <ScrollView style={styles.toDoContainer}>
         {todos.toReversed().map((todo) => (
           <View // round borders are not supported in <text> on ios so we wrap it in <View>
             key={todos.indexOf(todo)}
@@ -114,7 +121,7 @@ export default function App() {
             </Text>
           </View>
         ))}
-      </View>
+      </ScrollView>
     </View>
   );
 }
