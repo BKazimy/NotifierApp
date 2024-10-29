@@ -32,7 +32,7 @@ function TodoInput(props) {
                     <View style={styles.button}>
                         <Button title="Cancel"
                             onPress={props.handler}
-                            color='brown'
+                            color='maroon'
                         />
                     </View>
 
