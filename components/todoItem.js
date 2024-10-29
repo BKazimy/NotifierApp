@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 
-function TodoItem() {
+function TodoItem(props) {
     return (
         <View style={styles.todoItem}>
           <Text style={styles.todoText}>
-            {itemData.item.id}_{itemData.item.text}
+            {props.id}_{props.text}
           </Text>
         </View>
     );
