@@ -21,7 +21,7 @@ export default function App() {
     if (enteredTodoText) {
       setTodos((todos) => [
         ...todos, 
-        {text: enteredTodoText, key: Math.random().toString()},
+        enteredTodoText,
       ]);
       console.log(todos);
       // setEnteredTodoText('');
