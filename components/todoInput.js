@@ -19,7 +19,7 @@ function TodoInput(props) {
                 style={styles.textInput} 
                 placeholder='Your Text?'
                 onChangeText={todoInputHandler}
-                value={enteredTodoText}
+                value={enteredTodoText.toString()}
             />
             <Button 
                 title='Submit'
