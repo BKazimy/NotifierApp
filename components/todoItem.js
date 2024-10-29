@@ -3,16 +3,16 @@ import { StyleSheet, View, Text, Pressable } from "react-native";
 function TodoItem(props) {
 
     return (
-        <Pressable 
-            onPress={props.onDelete.bind(this, props.id)}
-            android_ripple={{color: '#fff'}}
-        >
-            <View style={styles.todoItem}>
-            <Text style={styles.todoText}>
-                {props.id}_{props.text}
-            </Text>
-            </View>
-        </Pressable>
+        <View style={styles.todoItem}>
+            <Pressable 
+                onPress={props.onDelete.bind(this, props.id)}
+                android_ripple={{color: '#101466'}}
+            >
+                <Text style={styles.todoText}>
+                    {props.id}_{props.text}
+                </Text>
+            </Pressable>
+        </View>
     );
 }
 
