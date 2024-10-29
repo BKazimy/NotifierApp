@@ -2,7 +2,7 @@ import { useState } from "react";
 import { StyleSheet, Button, TextInput, View } from "react-native";
 
 function TodoInput(props) {
-    const [enteredTodoText, setEnteredTodoText] = useState('abc');
+    const [enteredTodoText, setEnteredTodoText] = useState(1);
 
     function todoInputHandler(enteredText) {
       setEnteredTodoText(enteredText);
