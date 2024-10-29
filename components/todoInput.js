@@ -1,6 +1,24 @@
 import { StyleSheet, Button, TextInput, View } from "react-native";
 
 function TodoInput(props) {
+    const [enteredTodoText, setEnteredTodoText] = useState('abc');
+    const [todos, setTodos] = useState([]);
+  
+    function todoInputHandler(enteredText) {
+      setEnteredTodoText(enteredText);
+    };
+  
+    function addTodoHandler() {
+      if (enteredTodoText) {
+        setTodos((todos) => [
+          ...todos, 
+          {text: enteredTodoText, id: Math.random().toString()},
+        ]);
+        console.log(todos);
+        // setEnteredTodoText('');
+      };
+    };
+    
     return (
         <View>
             <TextInput 
