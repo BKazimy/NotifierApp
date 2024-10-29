@@ -48,11 +48,10 @@ export default TodoInput;
 const styles = StyleSheet.create({
     
   inputContainer: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
-
-    flex: 1,
 
     // borderBottomWidth: 1,
     // borderBottomColor: 'gainsboro',
