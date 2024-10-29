@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     
   inputContainer: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 20,
 
