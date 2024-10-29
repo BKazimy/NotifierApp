@@ -116,7 +116,7 @@ export default function App() {
               <Text 
                 style={styles.todoItems}
               >
-                {todo}
+                {idx+1}: { todo}
               </Text>
             </View>
           ))}
