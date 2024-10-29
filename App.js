@@ -10,7 +10,7 @@ import {
 
 export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('');
-  const [todos, setTodos] = useState([1,2,3,4,5,6,7,8,9,1,2,3,4,5,65,4,3]);
+  const [todos, setTodos] = useState([1,2,3,4,5,6,7,8,9,3,4,34,345,2342,3234,234,234]);
 
   function todoInputHandler(enteredText) {
     setEnteredTodoText(enteredText);
@@ -107,18 +107,20 @@ export default function App() {
       </View>
 
       <View style={styles.toDoContainer}>
-        {todos.toReversed().map((todo, idx) => (
-          <ScrollView // round borders are not supported in <text> on ios so we wrap it in <View>
-            key={todos.indexOf(todo)}
-            style={styles.todoItemContainer}
-          >
-            <Text 
-              style={styles.todoItems}
+        <ScrollView>
+          {todos.toReversed().map((todo, idx) => (
+            <View // round borders are not supported in <text> on ios so we wrap it in <View>
+              key={todos.indexOf(todo)}
+              style={styles.todoItemContainer}
             >
-              {idx+1}- {todo}
-            </Text>
-          </ScrollView>
-        ))}
+              <Text 
+                style={styles.todoItems}
+              >
+                {todo}
+              </Text>
+            </View>
+          ))}
+        </ScrollView>
       </View>
     </View>
   );
