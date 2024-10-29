@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingTop: 50,
     paddingHorizontal: 20,
-    backgroundColor: 'lavender',
+    // backgroundColor: 'lavender',
 
     // flexDirection: 'column',
     // justifyContent: 'space-between',
