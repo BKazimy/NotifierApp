@@ -74,10 +74,10 @@ const styles = StyleSheet.create({
     height: 40,
     marginRight: 5,
     marginBottom: '10%',
-    color: 'aliceblue',
+    color: 'whitesmoke',
 
     borderWidth: 1,
-    borderColor: 'aliceblue',
+    borderColor: 'silver',
     borderRadius: 5,
     // flex: 1, // takes as much space as possible for 1 share
 
