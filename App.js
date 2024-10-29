@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { 
   StyleSheet, 
-  Text, 
+  // Text, 
   View, 
   Button, 
   TextInput, 
-  ScrollView, // loads the whole page, good for limited content like articles or so
+  // ScrollView, // loads the whole page, good for limited content like articles or so
   FlatList, // handles the iteration, lazy-loads the page and use scrolls, good for dynamic lists
 } from 'react-native';
+
+import { TodoItem } from './components/todoItem';
 
 export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('');
@@ -129,13 +131,7 @@ export default function App() {
         <FlatList
           data={todos}
           renderItem={(itemData) => {
-            return (
-              <View style={styles.todoItemContainer}>
-                <Text style={styles.todoItems}>
-                  {itemData.item.id}_{itemData.item.text}
-                </Text>
-              </View>
-            )
+            return <TodoItem />;
           }}
           keyExtractor={(item, index) => {
             return item.id;
@@ -192,18 +188,6 @@ const styles = StyleSheet.create({
 
     borderTopWidth: 1,
     borderTopColor: 'gainsboro',
-  },
-
-  todoItemContainer: {
-    margin: 8,
-    padding: 8,
-    borderRadius: 6,
-    backgroundColor: '#57c',
-    // color: 'white', // Style inheritence is not supported in react
-  },
-  
-  todoItems: {
-    color: 'white',
   },
 
   // container: {
