@@ -43,118 +43,40 @@ export default function App() {
   }
 
   return (
-    // <View style={styles.container}>
-    // <View style={styles.appContainer}>
-    // <View style={{ 
-    //   padding: '9%', 
-    //   flexDirection: 'row', 
-    //   width:'80%', 
-    //   height: 300, 
-    //   justifyContent: 'space-around', 
-    //   alignItems: 'stretch', 
-    //   borderWidth:1, 
-    //   borderColor: 'red',
-    //   }}>
+    <>
+      <StatusBar style='dark' />
 
-    // <View
-    //   style={{
-    //     backgroundColor: 'red',
-    //     flex: 1,
-    //     // width: '33.33334%',
-    //     // height: 100,
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //   }}
-    // >
-    //   <Text>1</Text>
-    // </View>
-    //   <View
-    //     style={{
-    //       backgroundColor: 'green',
-    //       flex: 1,
-    //       // width: '33.33334%',
-    //       // height: 100,
-    //       justifyContent: 'center',
-    //       alignItems: 'center',
-    //     }}
-    //   >
-    //     <Text>2</Text>
-    //   </View>
-    //   <View
-    //     style={{
-    //       backgroundColor: 'blue',
-    //       flex: 1,
-    //       // width: '33.33334%',
-    //       // height: 100,
-    //       justifyContent: 'center',
-    //       alignItems: 'center',
-    //     }}
-    //   >
-    //     <Text>3</Text>
-    //   </View>
-    //   {/* <View style={styles.inputContainer}>
-    //     <TextInput style={styles.TextInput} placeholder='Your course name:' />
-    //     <Button title='Add Goal' />
-    //   </View>
-    //   <View>
-    //     <Text>List of Goals...</Text>
-    //   </View> */}
-
-    //   {/* <Text
-    //     style={styles.dummyStyle}
-    //   >
-    //     Hello world!
-    //     </Text>
-    //     <Button
-    //       style={styles.dummyStyle}
-    //       title="Im a button"
-    //     /> */}
-    // </View>
-    <View style={styles.appContainer}>
-      <Button 
-        title="Add new ToDo" 
-        color='#036' 
-        onPress={openModal}
-      />
-      
-      <TodoInput 
-        onAddTodo={addTodoHandler}
-        handler={closeModal}
-        visible={modalVisibility}
-      />
-
-      <View style={styles.toDoContainer}>
-        {/* <ScrollView>
-          {todos.toReversed().map((todo) => (
-            <View // round borders are not supported in <text> on ios so we wrap it in <View>
-              key={todo.key}
-              style={styles.todoItemContainer}
-            >
-              <Text 
-                style={styles.todoItems}
-              >
-                {todo.key*1000}_{todo.text}
-              </Text>
-            </View>
-          ))}
-        </ScrollView> */}
-
-        <FlatList
-          data={todos.toReversed()}
-          renderItem={(itemData) => {
-            return <TodoItem 
-              text={itemData.item.text}
-              id={itemData.item.id}
-              onDelete={deleteTodoHandeler}
-            />;
-          }}
-          keyExtractor={(item, index) => {
-            return item.id;
-          }}
-          alwaysBounceVertical={false}
+      <View style={styles.appContainer}>
+        <Button 
+          title="Add new ToDo" 
+          color='#036' 
+          onPress={openModal}
         />
+        
+        <TodoInput 
+          onAddTodo={addTodoHandler}
+          handler={closeModal}
+          visible={modalVisibility}
+        />
+
+        <View style={styles.toDoContainer}>
+          <FlatList
+            data={todos.toReversed()}
+            renderItem={(itemData) => {
+              return <TodoItem 
+                text={itemData.item.text}
+                id={itemData.item.id}
+                onDelete={deleteTodoHandeler}
+              />;
+            }}
+            keyExtractor={(item, index) => {
+              return item.id;
+            }}
+            alwaysBounceVertical={false}
+          />
+        </View>
       </View>
-    </View>
+    </>
   );
 }
 
