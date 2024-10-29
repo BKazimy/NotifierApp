@@ -132,7 +132,7 @@ export default function App() {
             return (
               <View style={styles.todoItemContainer}>
                 <Text style={styles.todoItems}>{
-                    (item, index) => item.id
+                    itemData.item.id
                   }_{itemData.item.text}
                 </Text>
               </View>
@@ -141,6 +141,7 @@ export default function App() {
           keyExtractor={(item, index) => {
             return item.id;
           }}
+          alwaysBounceVertical={false}
         />
       </View>
     </View>
