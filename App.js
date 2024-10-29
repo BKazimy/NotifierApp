@@ -6,7 +6,7 @@ import {
   Button, 
   TextInput, 
   ScrollView, // loads the whole page, good for limited content like articles or so
-  FlatList, // lazy-loads the page as use scrolls, good for dynamic lists
+  FlatList, // handles the iteration, lazy-loads the page and use scrolls, good for dynamic lists
 } from 'react-native';
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
         {text: enteredTodoText, key: Math.random().toString()},
       ]);
       console.log(todos);
-      setEnteredTodoText('');
+      // setEnteredTodoText('');
     };
   };
 
