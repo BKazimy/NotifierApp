@@ -75,11 +75,11 @@ const styles = StyleSheet.create({
   
   buttonContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'flex-start',
+    // justifyContent: 'space-around',
+    // alignItems: 'flex-start',
 
-    width: '100%',
-    flex: 1,
+    // width: '100%',
+    // flex: 1,
     
     borderWidth: 1,
     borderColor: 'red',
