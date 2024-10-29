@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     paddingTop: 50,
     paddingHorizontal: 20,
 
-    // flexDirection: 'column',
+    flexDirection: 'column',
     // justifyContent: 'space-between',
     // alignItems: 'stretch',
     flex: 1,
