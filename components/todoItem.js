@@ -6,7 +6,7 @@ function TodoItem(props) {
         <View style={styles.todoItem}>
             <Pressable 
                 onPress={props.onDelete.bind(this, props.id)}
-                android_ripple={{color: '#101466'}}
+                android_ripple={{color: '#f00'}}
             >
                 <Text style={styles.todoText}>
                     {props.id}_{props.text}
@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
 
   todoItem: {
     margin: 8,
-    padding: 8,
     borderRadius: 6,
     backgroundColor: '#57c',
     // color: 'white', // Style inheritence is not supported in react
@@ -30,5 +29,6 @@ const styles = StyleSheet.create({
   
   todoText: {
     color: 'white',
+    padding: 8,
   },
 })
