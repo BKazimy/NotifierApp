@@ -21,10 +21,10 @@ export default function App() {
     if (enteredTodoText) {
       setTodos((todos) => [
         ...todos, 
-        enteredTodoText,
+        {text: enteredTodoText, key: Math.random().toString()},
       ]);
       console.log(todos);
-      // setEnteredTodoText('');
+      setEnteredTodoText('');
     };
   };
 
@@ -131,7 +131,7 @@ export default function App() {
           renderItem={(itemData) => {
             return (
               <View style={styles.todoItemContainer}>
-                <Text style={styles.todoItems}>{itemData.item}</Text>
+                <Text style={styles.todoItems}>{itemData.item.text}</Text>
               </View>
             )
           }}
