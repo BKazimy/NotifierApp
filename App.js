@@ -27,6 +27,9 @@ export default function App() {
 
   function deleteTodoHandeler(todoId) {
     console.log("Deleteing id:", todoId);
+    setTodos(todos => {
+      return todos.filter((todo) => todo.id !== todoId);
+    })
   }
 
   return (
