@@ -11,7 +11,7 @@ import {
 
 export default function App() {
   const [enteredTodoText, setEnteredTodoText] = useState('');
-  const [todos, setTodos] = useState([1,23,3,4,56]);
+  const [todos, setTodos] = useState([]);
 
   function todoInputHandler(enteredText) {
     setEnteredTodoText(enteredText);
