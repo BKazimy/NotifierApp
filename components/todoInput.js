@@ -26,9 +26,8 @@ function TodoInput(props) {
                     value={enteredTodoText.toString()}
                 />
 
-                <View 
-                    // style={styles.buttons}
-                >
+                <View style={styles.buttonContainer}>
+
                     <Button 
                         title='Submit'
                         onPress={addTodoHandler}
@@ -69,8 +68,6 @@ const styles = StyleSheet.create({
   
   buttonContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
   },
 
 })
