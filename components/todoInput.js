@@ -16,7 +16,7 @@ function TodoInput(props) {
     return (
         <Modal
             visible={props.visible}
-            animationType="side"
+            animationType="slide"
         >
             <View style={styles.inputContainer}>
                 <TextInput 
