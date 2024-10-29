@@ -14,7 +14,7 @@ function TodoInput(props) {
     }
 
     return (
-        // <Modal>
+        <Modal>
             <View style={styles.inputContainer}>
                 <TextInput 
                     style={styles.textInput} 
@@ -27,7 +27,10 @@ function TodoInput(props) {
                     onPress={addTodoHandler}
                 />
             </View>
-        // </Modal>
+            <Button title="Back to ToDo list"
+                onPress={props.handler}
+            />
+        </Modal>
     )
 }
 
@@ -39,7 +42,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    // paddingBottom: 15,
+    paddingHorizontal: 20,
 
     flex: 1,
 
