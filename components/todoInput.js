@@ -10,14 +10,14 @@ function TodoInput(props) {
     return (
         <View>
             <TextInput 
-            style={styles.textInput} 
-            placeholder='Your Text?'
-            onChangeText={todoInputHandler}
-            value={enteredTodoText}
+                style={styles.textInput} 
+                placeholder='Your Text?'
+                onChangeText={todoInputHandler}
+                value={enteredTodoText}
             />
             <Button 
-            title='Submit'
-            onPress={props.onAdd}
+                title='Submit'
+                onPress={props.onAdd}
             />
         </View>
     )
