@@ -158,11 +158,11 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     width: '80%',
     marginRight: 5,
-    flex: 8,
+    flex: 1,
   },
 
   toDoContainer: {
-    flex: 4,
+    flex: 5,
 
     marginHorizontal: 10,
     paddingHorizontal: 10,
