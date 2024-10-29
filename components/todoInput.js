@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     width: '100%',
-    height: 15,
+    height: 40,
     marginRight: 5,
     flex: 1,
 
@@ -75,10 +75,10 @@ const styles = StyleSheet.create({
   
   buttonContainer: {
     flexDirection: 'row',
-    // justifyContent: 'space-around',
+    justifyContent: 'space-around',
     // alignItems: 'flex-start',
 
-    // width: '100%',
+    width: '100%',
     // flex: 1,
     
     borderWidth: 1,
