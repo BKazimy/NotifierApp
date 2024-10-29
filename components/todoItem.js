@@ -1,8 +1,13 @@
 import { StyleSheet, View, Text, Pressable } from "react-native";
 
 function TodoItem(props) {
+
+    function deleteTodo() {
+        props.onDelete(props.id);
+    }
+
     return (
-        <Pressable onPress={props.onDelete} >
+        <Pressable onPress={deleteTodo} >
             <View style={styles.todoItem}>
             <Text style={styles.todoText}>
                 {props.id}_{props.text}
