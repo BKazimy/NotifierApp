@@ -14,7 +14,7 @@ function TodoInput(props) {
     }
 
     return (
-        <Modal>
+        // <Modal>
             <View style={styles.inputContainer}>
                 <TextInput 
                     style={styles.textInput} 
@@ -26,11 +26,11 @@ function TodoInput(props) {
                     title='Submit'
                     onPress={addTodoHandler}
                 />
+                <Button title="Go to ToDo list"
+                    onPress={props.handler}
+                />
             </View>
-            <Button title="Go to ToDo list"
-                onPress={props.handler}
-            />
-        </Modal>
+        // </Modal>
     )
 }
 
