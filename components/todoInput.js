@@ -25,14 +25,21 @@ function TodoInput(props) {
                     onChangeText={todoInputHandler}
                     value={enteredTodoText.toString()}
                 />
-                <Button 
-                    title='Submit'
-                    onPress={addTodoHandler}
-                />
+
+                <View 
+                    // style={styles.buttons}
+                >
+                    <Button 
+                        title='Submit'
+                        onPress={addTodoHandler}
+                    />
+
+                    <Button title="Cancel"
+                        onPress={props.handler}
+                    />
+
+                </View>
             </View>
-            <Button title="Back to ToDo list"
-                onPress={props.handler}
-            />
         </Modal>
     )
 }
@@ -42,7 +49,6 @@ export default TodoInput;
 const styles = StyleSheet.create({
     
   inputContainer: {
-    flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 20,
@@ -51,6 +57,12 @@ const styles = StyleSheet.create({
 
     // borderBottomWidth: 1,
     // borderBottomColor: 'gainsboro',
+  },
+
+  buttons: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
 
   textInput: {
