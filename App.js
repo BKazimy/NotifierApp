@@ -106,9 +106,9 @@ export default function App() {
         />
       </View>
 
-      <ScrollView style={styles.toDoContainer}>
+      <View style={styles.toDoContainer}>
         {todos.toReversed().map((todo, idx) => (
-          <View // round borders are not supported in <text> on ios so we wrap it in <View>
+          <ScrollView // round borders are not supported in <text> on ios so we wrap it in <View>
             key={todos.indexOf(todo)}
             style={styles.todoItemContainer}
           >
@@ -117,9 +117,9 @@ export default function App() {
             >
               {idx+1}- {todo}
             </Text>
-          </View>
+          </ScrollView>
         ))}
-      </ScrollView>
+      </View>
     </View>
   );
 }
