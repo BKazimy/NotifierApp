@@ -63,9 +63,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: '15%',
+    backgroundColor: 'magenta',
 
-    borderBottomWidth: 1,
-    borderBottomColor: 'gainsboro',
+    // borderBottomWidth: 1,
+    // borderBottomColor: 'gainsboro',
   },
 
   textInput: {
