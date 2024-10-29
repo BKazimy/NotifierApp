@@ -19,12 +19,14 @@ function TodoInput(props) {
             animationType='slide'
         >
             <View style={styles.inputContainer}>
-                <TextInput 
-                    style={styles.textInput} 
-                    placeholder='Your Text?'
-                    onChangeText={todoInputHandler}
-                    value={enteredTodoText.toString()}
-                />
+                <View style={styles.textInput}>
+                    <TextInput 
+                        
+                        placeholder='Your Text?'
+                        onChangeText={todoInputHandler}
+                        value={enteredTodoText.toString()}
+                    />
+                </View>
 
                 <View style={styles.buttonContainer}>
                     <Button 
@@ -64,6 +66,9 @@ const styles = StyleSheet.create({
     marginRight: 5,
     flex: 1,
 
+    // justifyContent: 'center',
+    // alignItems: 'center',
+
     // borderWidth: 1,
     // borderColor: 'red',
   },
@@ -71,7 +76,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    alignItems: 'center',
+    alignItems: 'flex-start',
 
     width: '100%',
     flex: 1,
