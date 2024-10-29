@@ -28,18 +28,19 @@ function TodoInput(props) {
                 />
 
                 <View style={styles.buttonContainer}>
+                    
+                    <View style={styles.button}>
+                        <Button title="Cancel"
+                            onPress={props.handler}
+                            color='maroon'
+                        />
+                    </View>
+
                     <View style={styles.button}>
                         <Button 
                             title='Submit'
                             onPress={addTodoHandler}
                             color='seagreen'
-                        />
-                    </View>
-
-                    <View style={styles.button}>
-                        <Button title="Cancel"
-                            onPress={props.handler}
-                            color='maroon'
                         />
                     </View>
 
