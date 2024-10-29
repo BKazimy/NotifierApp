@@ -114,6 +114,7 @@ export default function App() {
       {modalVisibility && 
         <TodoInput 
           onAddTodo={addTodoHandler}
+          
         />
       }
 
