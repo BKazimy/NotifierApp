@@ -15,7 +15,7 @@ import TodoInput from './components/todoInput';
 export default function App() {
   const [todos, setTodos] = useState([]);
 
-  function addTodoHandler() {
+  function addTodoHandler(enteredTodoText) {
     if (enteredTodoText) {
       setTodos((todos) => [
         ...todos, 
