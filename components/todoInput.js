@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     
   inputContainer: {
     flex: 1,
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: '15%',
 
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 40,
     marginRight: 5,
+    marginBottom: '10%',
     // flex: 1,
 
     // justifyContent: 'center',
@@ -81,8 +82,8 @@ const styles = StyleSheet.create({
     width: '100%',
     // flex: 1,
     
-    borderWidth: 1,
-    borderColor: 'red',
+    // borderWidth: 1,
+    // borderColor: 'red',
   },
 
 })
