@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
 
   pressedItem: {
-    color: '#c00',
+    color: 'maroon',
     // opacity: 1,
   }
 })
