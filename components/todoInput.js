@@ -10,7 +10,7 @@ function TodoInput(props) {
 
     function addTodoHandler() {
         props.onAddTodo(enteredTodoText); // manually passes the parameters to onAddTodo
-        setEnteredTodoText('abcc');
+        setEnteredTodoText(enteredTodoText+1);
     }
 
     return (
