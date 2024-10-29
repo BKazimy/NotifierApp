@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyleSheet, Button, TextInput, View, Modal } from "react-native";
+import { StyleSheet, Button, TextInput, View, Modal, Image } from "react-native";
 
 function TodoInput(props) {
     const [enteredTodoText, setEnteredTodoText] = useState(1);
@@ -19,14 +19,13 @@ function TodoInput(props) {
             animationType='slide'
         >
             <View style={styles.inputContainer}>
-                {/* <View > */}
-                    <TextInput 
-                        style={styles.textInput}
-                        placeholder='Your Text?'
-                        onChangeText={todoInputHandler}
-                        value={enteredTodoText.toString()}
-                    />
-                {/* </View> */}
+                <Image style={styles.image} source={require('../assets/images/todo.png')} />
+                <TextInput 
+                    style={styles.textInput}
+                    placeholder='Your Text?'
+                    onChangeText={todoInputHandler}
+                    value={enteredTodoText.toString()}
+                />
 
                 <View style={styles.buttonContainer}>
                     <View style={styles.button}>
@@ -53,6 +52,11 @@ function TodoInput(props) {
 export default TodoInput;
 
 const styles = StyleSheet.create({
+    image: {
+        width: 100,
+        height: 100,
+        margin: 20,
+    },
     
   inputContainer: {
     flex: 1,
