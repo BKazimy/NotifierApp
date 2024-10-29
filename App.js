@@ -11,10 +11,11 @@ import {
 
 import TodoItem from './components/todoItem';
 import TodoInput from './components/todoInput';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   const [todos, setTodos] = useState([]);
-  const [modalVisibility, setModalVisibility] = useState(true);
+  const [modalVisibility, setModalVisibility] = useState(false);
 
   function openModal() {
     setModalVisibility(true);
