@@ -29,14 +29,18 @@ function TodoInput(props) {
                 {/* </View> */}
 
                 <View style={styles.buttonContainer}>
-                    <Button 
-                        title='Submit'
-                        onPress={addTodoHandler}
-                    />
+                    <View style={styles.button}>
+                        <Button 
+                            title='Submit'
+                            onPress={addTodoHandler}
+                        />
+                    </View>
 
-                    <Button title="Cancel"
-                        onPress={props.handler}
-                    />
+                    <View style={styles.button}>
+                        <Button title="Cancel"
+                            onPress={props.handler}
+                        />
+                    </View>
 
                 </View>
             </View>
@@ -85,5 +89,9 @@ const styles = StyleSheet.create({
     // borderWidth: 1,
     // borderColor: 'red',
   },
+
+  button: {
+    width: '40%',
+  }
 
 })
