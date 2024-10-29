@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { StyleSheet, Button, TextInput, View } from "react-native";
 
 function TodoInput(props) {
+    const [enteredTodoText, setEnteredTodoText] = useState('abc');
+
+    function todoInputHandler(enteredText) {
+      setEnteredTodoText(enteredText);
+    };
     return (
         <View>
             <TextInput 
@@ -11,7 +17,7 @@ function TodoInput(props) {
             />
             <Button 
             title='Submit'
-            onPress={addTodoHandler}
+            onPress={props.onAdd}
             />
         </View>
     )
