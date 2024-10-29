@@ -22,7 +22,6 @@ export default function App() {
         {text: enteredTodoText, id: Math.random().toString()},
       ]);
       console.log(todos);
-      // setEnteredTodoText('');
     };
   };
 
