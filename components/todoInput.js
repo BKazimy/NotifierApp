@@ -51,16 +51,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 20,
+    paddingHorizontal: '15%',
 
-    // borderBottomWidth: 1,
-    // borderBottomColor: 'gainsboro',
+    borderBottomWidth: 1,
+    borderBottomColor: 'gainsboro',
   },
 
   textInput: {
     borderWidth: 1,
     borderColor: '#ccc',
-    width: '80%',
+    width: '100%',
     height: 15,
     marginRight: 5,
     flex: 1,
@@ -71,8 +71,10 @@ const styles = StyleSheet.create({
   
   buttonContainer: {
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
+
+    width: '100%',
     
     borderWidth: 1,
     borderColor: 'red',
