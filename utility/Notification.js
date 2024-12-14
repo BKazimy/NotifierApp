@@ -94,17 +94,6 @@ export const ScheduleNotification = async () => {
  * @param {object} navigation - The navigation object from React Navigation.
  */
 export const setNotificationResponseListener = (navigation) => {
- 
-const resetAction = StackActions.reset({
-    index: 1,
-    actions: [
-      NavigationActions.navigate({ routeName: 'home' }),
-      NavigationActions.navigate({ 
-        routeName: 'quotePage' ,
-        params: { id }
-      }),
-    ],
-  });
 
   Notifications.addNotificationResponseReceivedListener((response) => {
     const { id } = response.notification.request.content.data;
