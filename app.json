@@ -2,7 +2,7 @@
   "expo": {
     "name": "NotifierApp",
     "slug": "NotifierApp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "default",
@@ -34,6 +34,7 @@
       "eas": {
         "projectId": "dbd4e44f-59df-4fed-8132-de1be2d90040"
       }
-    }
+    },
+    "owner": "bkazimy"
   }
 }
