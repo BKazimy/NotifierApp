@@ -6,7 +6,7 @@ import Form from '../components/form';
 function NewQuote({ navigation, route }) {
   const { db } = route.params;
 
-  async function newQuoteHandler(quote, author, story = '', source) {
+  async function newQuoteHandler(quote, author, story = '', source = '') {
     try {
       const newEntry = await db.add({
         quote,
@@ -14,7 +14,7 @@ function NewQuote({ navigation, route }) {
         story,
         source,
       });
-      console.log('Added Quote:', newEntry);
+      alert("Quote added to database.");
       navigation.navigate('quotePage', { id: newEntry.id }); // Fixed typo
     } catch (error) {
       console.error('Error using QuoteDatabase:', error);
@@ -24,9 +24,18 @@ function NewQuote({ navigation, route }) {
 
   async function onReset() {
     try {
-      console.log('reset databae!');
       await db.reset();
+      alert("Database Have been reset to initial state.");
       navigation.goBack(null);
+    } catch (er) {
+      console.log('Error:', er);
+    }
+  }
+
+  async function onDeleteAll() {
+    try {
+      await db.clearDb();
+      alert("Database cleared.");
     } catch (er) {
       console.log('Error:', er);
     }
@@ -35,7 +44,7 @@ function NewQuote({ navigation, route }) {
   return (
     <View style={styles.container}>
       <View>
-        <Form navigation={navigation} newQuoteHandler={newQuoteHandler} onReset={onReset} />
+        <Form navigation={navigation} newQuoteHandler={newQuoteHandler} onReset={onReset} onDeleteAll={onDeleteAll} />
       </View>
     </View>
   );

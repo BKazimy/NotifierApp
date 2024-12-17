@@ -1,6 +1,6 @@
 import { StyleSheet, View, Pressable, Text, Platform } from "react-native";
 
-function Submission({ onCancel, onSave }) {
+function Submission({ onCancel, onSave, saveTitle, cancelTitle }) {
     return (
         <View style={styles.container}>
           <View style={styles.mealItem}>
@@ -10,7 +10,7 @@ function Submission({ onCancel, onSave }) {
                   style={({ pressed }) => (pressed ? styles.buttonPress : null)}
               >
                 <View style={styles.innerContainer}>
-                    <Text style={styles.title}>Cancel</Text>
+                    <Text style={styles.title}>{cancelTitle}</Text>
                 </View>
               </Pressable>
           </View>
@@ -21,7 +21,7 @@ function Submission({ onCancel, onSave }) {
                   style={({ pressed }) => (pressed ? styles.buttonPress : null)}
               >
                 <View style={styles.innerContainer}>
-                    <Text style={styles.title}>Save</Text>
+                    <Text style={styles.title}>{saveTitle}</Text>
                 </View>
               </Pressable>
           </View>

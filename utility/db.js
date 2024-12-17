@@ -89,10 +89,17 @@ class QuoteDatabase {
 
   async reset() {
     try {
-      await AsyncStorage.clear();
-      console.log("database resetted");
+      await this.clearDb();
       await this.initializeDatabase();
       await this.SetQuoteOfDay();
+    } catch (er) {
+      console.error('Error:', er);
+    }
+  }
+
+  async clearDb() {
+    try {
+      await AsyncStorage.clear();
     } catch (er) {
       console.error('Error:', er);
     }

@@ -14,8 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "1.0.0",
-      "bundleIdentifier": "y"
+      "buildNumber": "1.0.0"
     },
     "android": {
       "versionCode": 1,

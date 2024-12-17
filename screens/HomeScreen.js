@@ -18,7 +18,6 @@ function Home({ navigation, route }) {
     useEffect(() => {
     const subscription = Notifications.addNotificationResponseReceivedListener(response => {
       const id = response.notification.request.content.data.id;
-      console.log('notification id:', id); 
       navigation.navigate('quotePage', {id});
     });
     return () => subscription.remove();

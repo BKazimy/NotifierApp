@@ -5,7 +5,7 @@ import Submission from './submission';
 import CompButton from './compButton';
 
 
-function Form({ navigation, newQuoteHandler, edit, onReset }) {
+function Form({ navigation, newQuoteHandler, edit, onReset, onDeleteAll }) {
   const [quoteValue, setQuoteValue] = useState();
   const [storyValue, setStoryValue] = useState();
   const [authorValue, setAuthorValue] = useState();
@@ -18,6 +18,12 @@ function Form({ navigation, newQuoteHandler, edit, onReset }) {
   }
 
   function onSave() {
+    console.log('quotevalue:', quoteValue);
+    console.log('authorvalue:', authorValue);
+    if (!quoteValue || !authorValue) {
+      alert("You can't save without Quote or Author!");
+      return;
+    } 
     newQuoteHandler(quoteValue, authorValue, storyValue, sourceValue);
   }
 
@@ -62,11 +68,8 @@ function Form({ navigation, newQuoteHandler, edit, onReset }) {
           />
 
           <View style={styles.buttons}>
-            <Submission onCancel={onCancel} onSave={onSave} />
-            <CompButton
-              title="Reset Database To Initial"
-              onPress={onReset}
-            />
+            <Submission onCancel={onCancel} onSave={onSave} saveTitle="Save"  cancelTitle="Cancel" />
+            <Submission onCancel={onDeleteAll} onSave={onReset} saveTitle="Reset db"  cancelTitle="Delete db"/>
           </View>
       </View>
   );
