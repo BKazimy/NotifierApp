@@ -47,7 +47,6 @@ function QuotePage({ route, navigation }) {
         data = await db.getRandom(); // Fetch quote data
       }
       setQuoteData(data); // Update state with fetched data
-      await SendNotification(data.quote, data.story, data.id);
 
       // Set navigation options after fetching data
       navigation.setOptions({
