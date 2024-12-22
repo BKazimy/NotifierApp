@@ -20,13 +20,13 @@ import colors from './utility/color';
 const Stack = createStackNavigator();
 // const navigation = useNavigation;
 
-const b = async () => {
-  let a = await db.GetQuoteOfDay();
-  if (!a) {
-    await db.SetQuoteOfDay();
-  }
-};
-b();
+let b = async () => await db.SetQuoteOfDay();
+// async () => await db.GetQuoteOfDay();
+// let now = new Date();
+console.log(b());
+
+let a = new Date();
+console.log(a.getDate());
 
 function App() {
   // useEffect(() => {

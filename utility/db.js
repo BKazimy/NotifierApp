@@ -59,10 +59,10 @@ class QuoteDatabase {
     }
   }
 
-  async update(id, updatedData) {
+  async update(updatedData) {
     try {
       const quotes = await this.getAll();
-      const quoteIndex = quotes.findIndex((q) => q.id === id);
+      const quoteIndex = quotes.findIndex((q) => q.id === updatedData.id);
       if (quoteIndex !== -1) {
         quotes[quoteIndex] = { ...quotes[quoteIndex], ...updatedData };
         await AsyncStorage.setItem(this.storageKey, JSON.stringify(quotes));
@@ -145,20 +145,30 @@ class QuoteDatabase {
   }
 
   async SetQuoteOfDay() {
+    const now = new Date();
     try {
       const data = await this.getRandom();
-      const idObj = {id: data.id};
+      const idObj = {id: data.id, today: now.getDate()};
+      console.log('quote of the day object:', idObj);
       await AsyncStorage.setItem('today', JSON.stringify(idObj));
-      return await this.GetQuoteOfDay();
+      return idObj.id;
     } catch (e) {
       console.log('Couldnt update quote of day!', e);
     }
   }
 
   async GetQuoteOfDay() {
+    const now = new Date();
+    const quote = AsyncStorage.getItem('today');
+    // console.log('now:', now.getDate(), 'today:', quote);
     try {
-      const jsonValue = await AsyncStorage.getItem('today');
-      const today = jsonValue != null ? JSON.parse(jsonValue) : 'no value';
+      const data = await AsyncStorage.getItem('today');
+      const today = data != null ? JSON.parse(data) : 'no value';
+      console.log('today:', today);
+      if (today.today !== now.getDate()) {
+        console.log('days are not same!');
+        return await this.SetQuoteOfDay().id;
+      }
       return today.id;
     } catch(e) {
       console.log("Error occured!", e);
