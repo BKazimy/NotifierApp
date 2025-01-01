@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "bkazimy.NoifierApp"
+      "package": "com.bkazimy.NotifierApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -34,7 +34,6 @@
       "eas": {
         "projectId": "dbd4e44f-59df-4fed-8132-de1be2d90040"
       }
-    },
-    "owner": "bkazimy"
+    }
   }
 }
